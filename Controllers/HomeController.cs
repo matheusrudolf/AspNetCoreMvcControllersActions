@@ -22,6 +22,7 @@ namespace AspNetCoreMvcControllersActions.Controllers
                     Model = $"Home Controller"
                 }
             };
+            return ViewResultado;
         }
     }
 }
