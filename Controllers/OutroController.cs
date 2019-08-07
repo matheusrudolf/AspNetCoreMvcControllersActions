@@ -12,5 +12,10 @@ namespace AspNetCoreMvcControllersActions.Controllers
         {
             return View("Resultado", $"Outro controller");
         }
+
+        public ViewResult Headers()
+        {
+            return View("MapaResultado", Request.Headers.ToDictionary(kvp => kvp.Key, kvp =>))
+        }
     }
 }
